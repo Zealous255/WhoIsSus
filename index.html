@@ -1,0 +1,36 @@
+<h1>
+ Who is sus?
+</h1>
+<div>
+  <h3>
+   Is Aaron still alive?
+  </h3>
+  <button type="button" onclick="aaronAlive()">
+    Yes
+  </button>
+  <button type="button" onclick="aaronDead()">
+    No
+  </button>
+</div>
+<h3 id="result">
+  
+</h3>
+<script>
+function aaronAlive() {
+	document.getElementById('result').innerText = "Thinking....";
+  setTimeout(function() { aaronSus(); }, 3000);
+}
+
+function aaronSus() {
+	document.getElementById('result').innerText = "Aaron is sus";
+}
+
+function aaronDead() {
+	document.getElementById('result').innerText = "Thinking....";
+  setTimeout(function() { anthonySus(); }, 3000);
+}
+
+function anthonySus() {
+	document.getElementById('result').innerText = "Anthony is sus";
+}
+</script>
